@@ -26,7 +26,7 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 * creating a file using 'touch' command = touch 'filename.extension'
 * deleting a file = 
 * renaming a file = 
-* listing hidden files = 
+* listing hidden files = ls -a
 * copying a file from one directory to another = 
 * example 9 = 
 * example 10 = 
