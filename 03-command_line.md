@@ -22,14 +22,14 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 
 > > 
 * creating a directory = mkdir 'directoryname'
-* deleting a directory = 
+* deleting a directory = rm -r 'directoryname'
 * creating a file using 'touch' command = touch 'filename.extension'
-* deleting a file = 
-* renaming a file = 
+* deleting a file = rm 'filename'
+* renaming a file = mv 'original_filename' 'new_filename' (in same directory)
 * listing hidden files = ls -a
-* copying a file from one directory to another = 
-* example 9 = 
-* example 10 = 
+* copying a file from one directory to another = cp 'filename' 'directoryname'
+* moving a file = mv 'filename' 'directoryname'
+* listing hidden files in long format, with date and time = ls -alt
 
 ---
 
