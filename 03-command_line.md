@@ -73,7 +73,13 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > xargs reads data from standard input (stdin) and executes the command (supplied to it as an argument) one or more times based on the input read. Any blanks or spaces in the input are treated as delimiters, while blank lines are ignored. 'echo' is the defualt command xargs executes.
+* you can explicitly specify any other command to xargs
+* Example: 
+* xargs -L 1 find -name 
+* "*.txt"
+* ".tmp"
+* in the above example, find and -name are the commands / arguments sent to xargs; and "*.txt" + "*.tmp" are the file names we want to search as input through stdin
 
  
 
