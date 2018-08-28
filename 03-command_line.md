@@ -48,10 +48,10 @@ What do the following commands do:
 * ls = lists contents in a directory (does not include hidden files)
 * ls -a = lists contents in a directory, including hidden files
 * ls -l = lists all content in long format
-* ls -lh = 
-* ls -lah = 
+* ls -lh = lists content in long format, and displays file sizes in more user-friendly units (e.g. B = Bytes)
+* ls -lah = lists all content in long format, while displaying file sizes in more user-friendly units (e.g. B = Bytes)
 * ls -t = lists files and directories by the time they were last modified
-* ls -Glp = 
+* ls -Glp = do not print group names; list all content in long format; indicator style = slash
 
 
 ---
@@ -60,7 +60,12 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > 
+* ls -m = displays names as a comma-separated list
+* ls -R = displays sub-directories as well
+* ls -x = displays files as rows across the screen
+* ls -d = displays only directories
+* ls -F = flags file names
 
 ---
 
