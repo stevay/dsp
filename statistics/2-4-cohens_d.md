@@ -22,7 +22,7 @@ From here, we need to use above variables to calculate a couple items:
 * mean difference = first babies' mean total weight - other babies' mean total weight
 * pooled variance = ((number of first babies * variance of first babies' total weight) + (number of other babies * variance of other babies' total weight)) / (number of first babies + number of other babies)
 
-From there, we can calculate the Cohen effect size with the above variables, like so:
+From there, we can calculate the Cohen effect size with the above variables, like so:  
 **Cohen effect size = mean difference / sqrt(pooled variance)**
 
 Note for the above equation, we can import the module numpy in order to get the square root of the *pooled variance*
