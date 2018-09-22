@@ -88,12 +88,52 @@ Elvis Presley had a twin brother who died at birth.  What is the probability tha
 
 >> REPLACE THIS TEXT WITH YOUR RESPONSE
 
+#### Solution:
+* We want to find the probability Elvis is an identical twin, given he had a twin brother. 
+* To use Bayes' Theorem, we can assign the following:
+  - P(H1) = probability of identical twin
+  - P(H2) = probability of fraternal twin
+  - P(D) = total probability of twin brother
+  - P(H1|D) = probability of identical twin, given twin brother (this is what we want to find)
+  - P(D|H1) = probability of twin brother, given identical twin
+* With the above, we can use Bayes' Theorem to find P(H1|D):
+  - Bayes' Theorem is as follows: P(H1|D) = P(H1)P(D|H1) / P(D)
+  - We are given **P(H1)** = **1/300**
+  - For **P(D|H1)**: By knowledge, given an identical twin, the probability of twin brothers is **1/2** (twin brothers vs. twin sisters)
+  - We use the *law of total probability* to find **P(D)** = P(H1)P(D|H1) + P(H2)P(D|H2) = (1/300)(1/2) + (1/125)(1/4)
+  - P(H2) = 1/125 (this was given)
+  - For **P(D|H2)**: By knowledge, given a fraternal twin, the probability of twin brothers is **1/4** (boy-boy vs. boy-girl vs. girl-girl vs. girl-boy)
+
+Overall, since we are able to obtain **P(H1)**, **P(D|H1)**, and **P(D)**, we are able to calculate **P(H1|D)**:
+
+P(H1|D) = P(H1)P(D|H1) / P(D) = ((1/300)(1/2)) / ((1/300)(1/2) + (1/125)(1/4)) = (1/600) / ((1/600)+(1/500)) = **5/11**
+
 ---
 
 ### Q6. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
 >> REPLACE THIS TEXT WITH YOUR RESPONSE
+
+* Both are based on **probability** and **Bayes' Theorem**: P(H|D) = P(D|H)P(H) / P(D)
+* If the *prior* (P(H)) is known, both Bayesians and frequentists use Bayes' rule. 
+* If prior is not known, Bayesians develop one based on the best available information. Frequentists instead **abandon Bayes' Theorem and conduct inference just based on the likelihood function**:
+  - L(H;D) = P(D|H)
+* Frequentists believe that probabilities represent long-term frequencies of repeatable random experiments.
+  - e.g.: if a coin has probabiliy 0.5 of heads, the relative frequency of heads goes to 0.5 as the number of flips approaches infinity.
+  - Frequentists do not specify a probability distrubtion for a parameter of interest (e.g. 'x') with a fixed value.
+* Bayesians put probability distributions on both hypotheses and data, while frequentists put probability distributions on (random, repeatable, experimental) data given a hypothesis.
+
+* Bayesian inference:
+  - Uses probabilities for both hypotheses and data
+  - Requires a prior (known or constructed)
+  - Depends on prior and likelihood of observed data
+* Frequentist inference:
+  - Never uses or gives the probability of a hypothesis
+  - Depends on the likelihood (P(H|D)) for both observed and unobserved data
+  - Does not require a prior
+
+[Link for more info](https://cfss.uchicago.edu/persp017_inference.html)
 
 ---
 
